@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManipulacionStrings", "ManipulacionStrings\ManipulacionStrings.csproj", "{2EA886C3-CD39-4889-A256-9892B6AFA619}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EA886C3-CD39-4889-A256-9892B6AFA619}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EA886C3-CD39-4889-A256-9892B6AFA619}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EA886C3-CD39-4889-A256-9892B6AFA619}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EA886C3-CD39-4889-A256-9892B6AFA619}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
