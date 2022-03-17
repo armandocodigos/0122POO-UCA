@@ -3,9 +3,11 @@ namespace Vehiculo7pasos
     //Un carro que avanza y consume gasolina
     public class Carro
     {
+        //Atributos
         private double gasolina;
         private double eficiencia;
 
+        //Constructores
         public Carro(double pEficiencia)
         {
             gasolina = 0;
@@ -18,6 +20,7 @@ namespace Vehiculo7pasos
             this.eficiencia = eficiencia;
         }
 
+        //Métodos
         public void ponerGasolina(double cantidad)
         {
             gasolina += cantidad;

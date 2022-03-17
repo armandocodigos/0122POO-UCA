@@ -13,6 +13,8 @@ namespace Vehiculo7pasos
             Console.Write("Gasolina restante: ");
             Console.Write(unCarro.consultarGasolina());
             Console.WriteLine(" galones.");
+
+            
         }
     }
 }
