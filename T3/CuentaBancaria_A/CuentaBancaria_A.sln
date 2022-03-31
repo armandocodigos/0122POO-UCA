@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CuentaBancaria_A", "CuentaBancaria_A\CuentaBancaria_A.csproj", "{F3A35F62-9749-4406-B7B4-D4FAD2019F15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3A35F62-9749-4406-B7B4-D4FAD2019F15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3A35F62-9749-4406-B7B4-D4FAD2019F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3A35F62-9749-4406-B7B4-D4FAD2019F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3A35F62-9749-4406-B7B4-D4FAD2019F15}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
