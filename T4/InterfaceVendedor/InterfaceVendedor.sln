@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceVendedor", "InterfaceVendedor\InterfaceVendedor.csproj", "{A39BF73E-04F5-427E-8702-4DF8B3A2D199}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A39BF73E-04F5-427E-8702-4DF8B3A2D199}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A39BF73E-04F5-427E-8702-4DF8B3A2D199}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A39BF73E-04F5-427E-8702-4DF8B3A2D199}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A39BF73E-04F5-427E-8702-4DF8B3A2D199}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
