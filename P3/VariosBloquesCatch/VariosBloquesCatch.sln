@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VariosBloquesCatch", "VariosBloquesCatch\VariosBloquesCatch.csproj", "{840CCE87-BCD7-4E27-88BE-23BE8274B29B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{840CCE87-BCD7-4E27-88BE-23BE8274B29B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{840CCE87-BCD7-4E27-88BE-23BE8274B29B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{840CCE87-BCD7-4E27-88BE-23BE8274B29B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{840CCE87-BCD7-4E27-88BE-23BE8274B29B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
