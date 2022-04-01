@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcepcionPersonalizada_B", "ExcepcionPersonalizada_B\ExcepcionPersonalizada_B.csproj", "{77FF8058-A330-4A18-9BF4-36B142C23F91}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77FF8058-A330-4A18-9BF4-36B142C23F91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77FF8058-A330-4A18-9BF4-36B142C23F91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77FF8058-A330-4A18-9BF4-36B142C23F91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77FF8058-A330-4A18-9BF4-36B142C23F91}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
