@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliotecaUCA", "BibliotecaUCA\BibliotecaUCA.csproj", "{FB39F83F-2F4D-47A7-91DE-769B640B7CCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB39F83F-2F4D-47A7-91DE-769B640B7CCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB39F83F-2F4D-47A7-91DE-769B640B7CCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB39F83F-2F4D-47A7-91DE-769B640B7CCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB39F83F-2F4D-47A7-91DE-769B640B7CCE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
