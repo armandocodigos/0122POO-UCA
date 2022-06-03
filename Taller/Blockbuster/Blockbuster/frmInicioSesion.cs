@@ -22,5 +22,26 @@ namespace Blockbuster
         {
             
         }
+
+        private void btnInicioSesion_Click(object sender, EventArgs e)
+        {
+            string nombre = txtUsuario.Text;
+            string contraseña = txtContraseña.Text;
+            Usuario usu = UsuarioDAO.Existe(nombre, contraseña);
+
+            if (usu.nombre.Length > 0)
+            {
+                MessageBox.Show("Bienvenido!", "Blockbuster",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                frmPrincipal ventana = new frmPrincipal(usu);
+                ventana.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Credenciales erróneas!", "Blockbuster",
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
     }
 }

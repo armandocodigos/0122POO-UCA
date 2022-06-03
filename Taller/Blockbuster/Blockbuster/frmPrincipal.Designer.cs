@@ -61,9 +61,12 @@ namespace Blockbuster
             this.cmbBusquedaGenero = new System.Windows.Forms.ComboBox();
             this.tabNuevaP = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbNDirector = new System.Windows.Forms.ComboBox();
+            this.txtNDescripcion = new System.Windows.Forms.TextBox();
+            this.nudNStock = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -73,14 +76,14 @@ namespace Blockbuster
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnAgregarNuevo = new System.Windows.Forms.Button();
+            this.txtNCodigo = new System.Windows.Forms.TextBox();
+            this.txtNTitulo = new System.Windows.Forms.TextBox();
+            this.dtpNEstreno = new System.Windows.Forms.DateTimePicker();
+            this.nudNPrecio = new System.Windows.Forms.NumericUpDown();
+            this.nudNDuracion = new System.Windows.Forms.NumericUpDown();
+            this.cmbNGenero = new System.Windows.Forms.ComboBox();
             this.dgvNuevaPelicula = new System.Windows.Forms.DataGridView();
             this.tabModP = new System.Windows.Forms.TabPage();
             this.tabEliminarP = new System.Windows.Forms.TabPage();
@@ -114,9 +117,9 @@ namespace Blockbuster
             ((System.ComponentModel.ISupportInitialize)(this.dgvGenero)).BeginInit();
             this.tabNuevaP.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudNStock)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudNPrecio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudNDuracion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNuevaPelicula)).BeginInit();
             this.mstMenuSuperior.SuspendLayout();
             this.SuspendLayout();
@@ -257,13 +260,13 @@ namespace Blockbuster
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(740, 474);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(740, 501);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.Location = new System.Drawing.Point(3, 48);
+            this.label3.Location = new System.Drawing.Point(3, 52);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(142, 23);
             this.label3.TabIndex = 0;
@@ -276,7 +279,7 @@ namespace Blockbuster
             this.cmbTipoBusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTipoBusqueda.FormattingEnabled = true;
             this.cmbTipoBusqueda.Items.AddRange(new object[] { "Título", "Género" });
-            this.cmbTipoBusqueda.Location = new System.Drawing.Point(151, 47);
+            this.cmbTipoBusqueda.Location = new System.Drawing.Point(151, 51);
             this.cmbTipoBusqueda.Name = "cmbTipoBusqueda";
             this.cmbTipoBusqueda.Size = new System.Drawing.Size(364, 24);
             this.cmbTipoBusqueda.TabIndex = 1;
@@ -289,10 +292,10 @@ namespace Blockbuster
             this.tableLayoutPanel2.SetColumnSpan(this.tabInterior, 3);
             this.tabInterior.Controls.Add(this.tabTitulo);
             this.tabInterior.Controls.Add(this.tabGenero);
-            this.tabInterior.Location = new System.Drawing.Point(3, 74);
+            this.tabInterior.Location = new System.Drawing.Point(3, 78);
             this.tabInterior.Name = "tabInterior";
             this.tabInterior.SelectedIndex = 0;
-            this.tabInterior.Size = new System.Drawing.Size(734, 397);
+            this.tabInterior.Size = new System.Drawing.Size(734, 420);
             this.tabInterior.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabInterior.TabIndex = 2;
             this.tabInterior.TabStop = false;
@@ -303,7 +306,7 @@ namespace Blockbuster
             this.tabTitulo.Location = new System.Drawing.Point(4, 28);
             this.tabTitulo.Name = "tabTitulo";
             this.tabTitulo.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTitulo.Size = new System.Drawing.Size(726, 365);
+            this.tabTitulo.Size = new System.Drawing.Size(726, 388);
             this.tabTitulo.TabIndex = 0;
             this.tabTitulo.Text = "Título";
             this.tabTitulo.UseVisualStyleBackColor = true;
@@ -324,7 +327,7 @@ namespace Blockbuster
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(714, 353);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(714, 376);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // label4
@@ -332,7 +335,7 @@ namespace Blockbuster
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.Location = new System.Drawing.Point(3, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(136, 35);
+            this.label4.Size = new System.Drawing.Size(136, 37);
             this.label4.TabIndex = 0;
             this.label4.Text = "Título:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -340,7 +343,7 @@ namespace Blockbuster
             // txtBusquedaTitulo
             // 
             this.txtBusquedaTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtBusquedaTitulo.Location = new System.Drawing.Point(145, 10);
+            this.txtBusquedaTitulo.Location = new System.Drawing.Point(145, 12);
             this.txtBusquedaTitulo.Name = "txtBusquedaTitulo";
             this.txtBusquedaTitulo.Size = new System.Drawing.Size(351, 22);
             this.txtBusquedaTitulo.TabIndex = 1;
@@ -352,10 +355,11 @@ namespace Blockbuster
             this.btnBusquedaTitulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBusquedaTitulo.Location = new System.Drawing.Point(502, 3);
             this.btnBusquedaTitulo.Name = "btnBusquedaTitulo";
-            this.btnBusquedaTitulo.Size = new System.Drawing.Size(209, 29);
+            this.btnBusquedaTitulo.Size = new System.Drawing.Size(209, 31);
             this.btnBusquedaTitulo.TabIndex = 2;
             this.btnBusquedaTitulo.Text = "Buscar";
             this.btnBusquedaTitulo.UseVisualStyleBackColor = false;
+            this.btnBusquedaTitulo.Click += new System.EventHandler(this.btnBusquedaTitulo_Click);
             // 
             // dgvTitulo
             // 
@@ -364,10 +368,10 @@ namespace Blockbuster
             this.dgvTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvTitulo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableLayoutPanel3.SetColumnSpan(this.dgvTitulo, 3);
-            this.dgvTitulo.Location = new System.Drawing.Point(3, 38);
+            this.dgvTitulo.Location = new System.Drawing.Point(3, 40);
             this.dgvTitulo.Name = "dgvTitulo";
             this.dgvTitulo.ReadOnly = true;
-            this.dgvTitulo.Size = new System.Drawing.Size(708, 312);
+            this.dgvTitulo.Size = new System.Drawing.Size(708, 333);
             this.dgvTitulo.TabIndex = 3;
             // 
             // tabGenero
@@ -376,7 +380,7 @@ namespace Blockbuster
             this.tabGenero.Location = new System.Drawing.Point(4, 28);
             this.tabGenero.Name = "tabGenero";
             this.tabGenero.Padding = new System.Windows.Forms.Padding(3);
-            this.tabGenero.Size = new System.Drawing.Size(726, 365);
+            this.tabGenero.Size = new System.Drawing.Size(726, 388);
             this.tabGenero.TabIndex = 1;
             this.tabGenero.Text = "Género";
             this.tabGenero.UseVisualStyleBackColor = true;
@@ -397,7 +401,7 @@ namespace Blockbuster
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(714, 355);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(714, 382);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
             // label5
@@ -405,7 +409,7 @@ namespace Blockbuster
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.Location = new System.Drawing.Point(3, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(136, 35);
+            this.label5.Size = new System.Drawing.Size(136, 38);
             this.label5.TabIndex = 0;
             this.label5.Text = "Género:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -417,10 +421,11 @@ namespace Blockbuster
             this.btnBusquedaGenero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBusquedaGenero.Location = new System.Drawing.Point(502, 3);
             this.btnBusquedaGenero.Name = "btnBusquedaGenero";
-            this.btnBusquedaGenero.Size = new System.Drawing.Size(209, 29);
+            this.btnBusquedaGenero.Size = new System.Drawing.Size(209, 32);
             this.btnBusquedaGenero.TabIndex = 2;
             this.btnBusquedaGenero.Text = "Buscar";
             this.btnBusquedaGenero.UseVisualStyleBackColor = false;
+            this.btnBusquedaGenero.Click += new System.EventHandler(this.btnBusquedaGenero_Click);
             // 
             // dgvGenero
             // 
@@ -429,10 +434,10 @@ namespace Blockbuster
             this.dgvGenero.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvGenero.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableLayoutPanel4.SetColumnSpan(this.dgvGenero, 3);
-            this.dgvGenero.Location = new System.Drawing.Point(3, 38);
+            this.dgvGenero.Location = new System.Drawing.Point(3, 41);
             this.dgvGenero.Name = "dgvGenero";
             this.dgvGenero.ReadOnly = true;
-            this.dgvGenero.Size = new System.Drawing.Size(708, 314);
+            this.dgvGenero.Size = new System.Drawing.Size(708, 338);
             this.dgvGenero.TabIndex = 3;
             // 
             // cmbBusquedaGenero
@@ -440,7 +445,7 @@ namespace Blockbuster
             this.cmbBusquedaGenero.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbBusquedaGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBusquedaGenero.FormattingEnabled = true;
-            this.cmbBusquedaGenero.Location = new System.Drawing.Point(145, 8);
+            this.cmbBusquedaGenero.Location = new System.Drawing.Point(145, 14);
             this.cmbBusquedaGenero.Name = "cmbBusquedaGenero";
             this.cmbBusquedaGenero.Size = new System.Drawing.Size(351, 24);
             this.cmbBusquedaGenero.TabIndex = 4;
@@ -463,9 +468,12 @@ namespace Blockbuster
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel5.Controls.Add(this.comboBox2, 3, 3);
-            this.tableLayoutPanel5.Controls.Add(this.textBox3, 3, 1);
-            this.tableLayoutPanel5.Controls.Add(this.numericUpDown3, 3, 0);
+            this.tableLayoutPanel5.Controls.Add(this.comboBox3, 0, 6);
+            this.tableLayoutPanel5.Controls.Add(this.comboBox2, 0, 6);
+            this.tableLayoutPanel5.Controls.Add(this.comboBox1, 0, 6);
+            this.tableLayoutPanel5.Controls.Add(this.cmbNDirector, 3, 3);
+            this.tableLayoutPanel5.Controls.Add(this.txtNDescripcion, 3, 1);
+            this.tableLayoutPanel5.Controls.Add(this.nudNStock, 3, 0);
             this.tableLayoutPanel5.Controls.Add(this.label6, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.label7, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.label8, 0, 2);
@@ -475,56 +483,87 @@ namespace Blockbuster
             this.tableLayoutPanel5.Controls.Add(this.label12, 2, 1);
             this.tableLayoutPanel5.Controls.Add(this.label13, 2, 2);
             this.tableLayoutPanel5.Controls.Add(this.label14, 2, 3);
-            this.tableLayoutPanel5.Controls.Add(this.button1, 2, 4);
-            this.tableLayoutPanel5.Controls.Add(this.button2, 3, 4);
-            this.tableLayoutPanel5.Controls.Add(this.textBox1, 1, 0);
-            this.tableLayoutPanel5.Controls.Add(this.textBox2, 1, 1);
-            this.tableLayoutPanel5.Controls.Add(this.dateTimePicker1, 1, 2);
-            this.tableLayoutPanel5.Controls.Add(this.numericUpDown1, 1, 3);
-            this.tableLayoutPanel5.Controls.Add(this.numericUpDown2, 1, 4);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox1, 3, 2);
+            this.tableLayoutPanel5.Controls.Add(this.btnLimpiar, 2, 4);
+            this.tableLayoutPanel5.Controls.Add(this.btnAgregarNuevo, 3, 4);
+            this.tableLayoutPanel5.Controls.Add(this.txtNCodigo, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.txtNTitulo, 1, 1);
+            this.tableLayoutPanel5.Controls.Add(this.dtpNEstreno, 1, 2);
+            this.tableLayoutPanel5.Controls.Add(this.nudNPrecio, 1, 3);
+            this.tableLayoutPanel5.Controls.Add(this.nudNDuracion, 1, 4);
+            this.tableLayoutPanel5.Controls.Add(this.cmbNGenero, 3, 2);
             this.tableLayoutPanel5.Controls.Add(this.dgvNuevaPelicula, 0, 5);
             this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 6;
+            this.tableLayoutPanel5.RowCount = 7;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(746, 480);
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(746, 507);
             this.tableLayoutPanel5.TabIndex = 0;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(3, 486);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(143, 24);
+            this.comboBox3.TabIndex = 23;
             // 
             // comboBox2
             // 
             this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(524, 168);
+            this.comboBox2.Location = new System.Drawing.Point(152, 486);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(219, 24);
-            this.comboBox2.TabIndex = 19;
+            this.comboBox2.Size = new System.Drawing.Size(217, 24);
+            this.comboBox2.TabIndex = 22;
             // 
-            // textBox3
+            // comboBox1
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Location = new System.Drawing.Point(524, 71);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(219, 22);
-            this.textBox3.TabIndex = 17;
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(375, 486);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(143, 24);
+            this.comboBox1.TabIndex = 21;
             // 
-            // numericUpDown3
+            // cmbNDirector
             // 
-            this.numericUpDown3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown3.Location = new System.Drawing.Point(524, 23);
-            this.numericUpDown3.Maximum = new decimal(new int[] { 50, 0, 0, 0 });
-            this.numericUpDown3.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(219, 22);
-            this.numericUpDown3.TabIndex = 16;
-            this.numericUpDown3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown3.Value = new decimal(new int[] { 10, 0, 0, 0 });
+            this.cmbNDirector.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbNDirector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbNDirector.FormattingEnabled = true;
+            this.cmbNDirector.Location = new System.Drawing.Point(524, 168);
+            this.cmbNDirector.Name = "cmbNDirector";
+            this.cmbNDirector.Size = new System.Drawing.Size(219, 24);
+            this.cmbNDirector.TabIndex = 19;
+            // 
+            // txtNDescripcion
+            // 
+            this.txtNDescripcion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNDescripcion.Location = new System.Drawing.Point(524, 71);
+            this.txtNDescripcion.Name = "txtNDescripcion";
+            this.txtNDescripcion.Size = new System.Drawing.Size(219, 22);
+            this.txtNDescripcion.TabIndex = 17;
+            // 
+            // nudNStock
+            // 
+            this.nudNStock.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.nudNStock.Location = new System.Drawing.Point(524, 23);
+            this.nudNStock.Maximum = new decimal(new int[] { 50, 0, 0, 0 });
+            this.nudNStock.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            this.nudNStock.Name = "nudNStock";
+            this.nudNStock.Size = new System.Drawing.Size(219, 22);
+            this.nudNStock.TabIndex = 16;
+            this.nudNStock.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nudNStock.Value = new decimal(new int[] { 10, 0, 0, 0 });
             // 
             // label6
             // 
@@ -616,86 +655,87 @@ namespace Blockbuster
             this.label14.Text = "Director:";
             this.label14.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
-            // button1
+            // btnLimpiar
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(375, 195);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(143, 42);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Limpiar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLimpiar.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiar.Location = new System.Drawing.Point(375, 195);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(143, 42);
+            this.btnLimpiar.TabIndex = 9;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnAgregarNuevo
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(524, 195);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(219, 42);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Agregar nuevo";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnAgregarNuevo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAgregarNuevo.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnAgregarNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarNuevo.Location = new System.Drawing.Point(524, 195);
+            this.btnAgregarNuevo.Name = "btnAgregarNuevo";
+            this.btnAgregarNuevo.Size = new System.Drawing.Size(219, 42);
+            this.btnAgregarNuevo.TabIndex = 10;
+            this.btnAgregarNuevo.Text = "Agregar nuevo";
+            this.btnAgregarNuevo.UseVisualStyleBackColor = false;
+            this.btnAgregarNuevo.Click += new System.EventHandler(this.btnAgregarNuevo_Click);
             // 
-            // textBox1
+            // txtNCodigo
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(152, 23);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(217, 22);
-            this.textBox1.TabIndex = 11;
+            this.txtNCodigo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNCodigo.Location = new System.Drawing.Point(152, 23);
+            this.txtNCodigo.Name = "txtNCodigo";
+            this.txtNCodigo.Size = new System.Drawing.Size(217, 22);
+            this.txtNCodigo.TabIndex = 11;
             // 
-            // textBox2
+            // txtNTitulo
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(152, 71);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(217, 22);
-            this.textBox2.TabIndex = 12;
+            this.txtNTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNTitulo.Location = new System.Drawing.Point(152, 71);
+            this.txtNTitulo.Name = "txtNTitulo";
+            this.txtNTitulo.Size = new System.Drawing.Size(217, 22);
+            this.txtNTitulo.TabIndex = 12;
             // 
-            // dateTimePicker1
+            // dtpNEstreno
             // 
-            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(152, 119);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(217, 22);
-            this.dateTimePicker1.TabIndex = 13;
+            this.dtpNEstreno.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtpNEstreno.Location = new System.Drawing.Point(152, 119);
+            this.dtpNEstreno.Name = "dtpNEstreno";
+            this.dtpNEstreno.Size = new System.Drawing.Size(217, 22);
+            this.dtpNEstreno.TabIndex = 13;
             // 
-            // numericUpDown1
+            // nudNPrecio
             // 
-            this.numericUpDown1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown1.Location = new System.Drawing.Point(152, 167);
-            this.numericUpDown1.Minimum = new decimal(new int[] { 10, 0, 0, 0 });
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(217, 22);
-            this.numericUpDown1.TabIndex = 14;
-            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown1.Value = new decimal(new int[] { 10, 0, 0, 0 });
+            this.nudNPrecio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.nudNPrecio.Location = new System.Drawing.Point(152, 167);
+            this.nudNPrecio.Minimum = new decimal(new int[] { 10, 0, 0, 0 });
+            this.nudNPrecio.Name = "nudNPrecio";
+            this.nudNPrecio.Size = new System.Drawing.Size(217, 22);
+            this.nudNPrecio.TabIndex = 14;
+            this.nudNPrecio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nudNPrecio.Value = new decimal(new int[] { 10, 0, 0, 0 });
             // 
-            // numericUpDown2
+            // nudNDuracion
             // 
-            this.numericUpDown2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown2.Location = new System.Drawing.Point(152, 215);
-            this.numericUpDown2.Maximum = new decimal(new int[] { 120, 0, 0, 0 });
-            this.numericUpDown2.Minimum = new decimal(new int[] { 30, 0, 0, 0 });
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(217, 22);
-            this.numericUpDown2.TabIndex = 15;
-            this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown2.Value = new decimal(new int[] { 30, 0, 0, 0 });
+            this.nudNDuracion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.nudNDuracion.Location = new System.Drawing.Point(152, 215);
+            this.nudNDuracion.Maximum = new decimal(new int[] { 120, 0, 0, 0 });
+            this.nudNDuracion.Minimum = new decimal(new int[] { 30, 0, 0, 0 });
+            this.nudNDuracion.Name = "nudNDuracion";
+            this.nudNDuracion.Size = new System.Drawing.Size(217, 22);
+            this.nudNDuracion.TabIndex = 15;
+            this.nudNDuracion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nudNDuracion.Value = new decimal(new int[] { 30, 0, 0, 0 });
             // 
-            // comboBox1
+            // cmbNGenero
             // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(524, 120);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(219, 24);
-            this.comboBox1.TabIndex = 18;
+            this.cmbNGenero.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbNGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbNGenero.FormattingEnabled = true;
+            this.cmbNGenero.Location = new System.Drawing.Point(524, 120);
+            this.cmbNGenero.Name = "cmbNGenero";
+            this.cmbNGenero.Size = new System.Drawing.Size(219, 24);
+            this.cmbNGenero.TabIndex = 18;
             // 
             // dgvNuevaPelicula
             // 
@@ -707,7 +747,7 @@ namespace Blockbuster
             this.dgvNuevaPelicula.Location = new System.Drawing.Point(3, 243);
             this.dgvNuevaPelicula.Name = "dgvNuevaPelicula";
             this.dgvNuevaPelicula.ReadOnly = true;
-            this.dgvNuevaPelicula.Size = new System.Drawing.Size(740, 234);
+            this.dgvNuevaPelicula.Size = new System.Drawing.Size(740, 237);
             this.dgvNuevaPelicula.TabIndex = 20;
             // 
             // tabModP
@@ -850,6 +890,7 @@ namespace Blockbuster
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bienvenido a Blockbuster";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmPrincipal_FormClosing);
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.sstBarraInferior.ResumeLayout(false);
             this.sstBarraInferior.PerformLayout();
@@ -871,9 +912,9 @@ namespace Blockbuster
             this.tabNuevaP.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudNStock)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudNPrecio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudNDuracion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNuevaPelicula)).EndInit();
             this.mstMenuSuperior.ResumeLayout(false);
             this.mstMenuSuperior.PerformLayout();
@@ -881,27 +922,31 @@ namespace Blockbuster
             this.PerformLayout();
         }
 
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox3;
+
         private System.Windows.Forms.ToolTip ttpIncompleto;
 
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbNDirector;
         private System.Windows.Forms.DataGridView dgvNuevaPelicula;
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbNGenero;
 
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtNDescripcion;
 
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.NumericUpDown nudNStock;
 
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown nudNDuracion;
 
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown nudNPrecio;
 
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox txtNTitulo;
+        private System.Windows.Forms.DateTimePicker dtpNEstreno;
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNCodigo;
 
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnAgregarNuevo;
 
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
@@ -911,7 +956,7 @@ namespace Blockbuster
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLimpiar;
 
         private System.Windows.Forms.Label label6;
 

@@ -71,6 +71,15 @@ namespace Blockbuster.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Server=localhost;Database=blockbuster;Trusted_Connection=True;.
+        /// </summary>
+        internal static string cadena_conexion {
+            get {
+                return ResourceManager.GetString("cadena_conexion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap logo {

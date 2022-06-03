@@ -46,6 +46,8 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Director.cs" />
+        <Compile Include="DirectorDAO.cs" />
         <Compile Include="frmInicioSesion.cs">
             <SubType>Form</SubType>
         </Compile>
@@ -58,8 +60,14 @@
         <Compile Include="frmPrincipal.Designer.cs">
           <DependentUpon>frmPrincipal.cs</DependentUpon>
         </Compile>
+        <Compile Include="Género.cs" />
+        <Compile Include="GéneroDAO.cs" />
+        <Compile Include="Película.cs" />
+        <Compile Include="PelículaDAO.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="Usuario.cs" />
+        <Compile Include="UsuarioDAO.cs" />
         <EmbeddedResource Include="frmInicioSesion.resx">
           <DependentUpon>frmInicioSesion.cs</DependentUpon>
         </EmbeddedResource>

@@ -95,10 +95,12 @@
             this.btnInicioSesion.TabIndex = 5;
             this.btnInicioSesion.Text = "Iniciar Sesión";
             this.btnInicioSesion.UseVisualStyleBackColor = false;
+            this.btnInicioSesion.Click += new System.EventHandler(this.btnInicioSesion_Click);
             // 
             // btnRegistrarse
             // 
             this.btnRegistrarse.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnRegistrarse.Enabled = false;
             this.btnRegistrarse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrarse.Location = new System.Drawing.Point(46, 274);
             this.btnRegistrarse.Name = "btnRegistrarse";
@@ -123,7 +125,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "frmInicioSesion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
