@@ -34,18 +34,20 @@ CREATE TABLE USUARIO(
 
 CREATE TABLE PELICULA(
     code            CHAR(11) PRIMARY KEY,
-    titulo          VARCHAR(32)     NOT NULL,
+    titulo          VARCHAR(500)     NOT NULL,
     estreno         DATETIME        NOT NULL,
     precio          MONEY           NOT NULL,
     duracion        INT             NOT NULL, --Minutos
     stock           INT             NOT NULL,
-    descripcion     VARCHAR(280)    NOT NULL,
+    descripcion     VARCHAR(500)    NOT NULL,
     id_genero       CHAR(6) NOT NULL
         DEFAULT 'GEN_00',
     id_director     CHAR(6) NOT NULL
         DEFAULT 'DIR_00',
     id_usuario      CHAR(10) NULL
 );
+
+ALTER TABLE PELICULA ALTER COLUMN descripcion VARCHAR(500) NOT NULL;
 
 CREATE TABLE RENTA(
     id INT IDENTITY(1,1) PRIMARY KEY,
